@@ -9,13 +9,16 @@ using System.Windows.Forms;
 namespace CoffeeCafeProject
 {
     public partial class FrmMenu : Form
+
     {
         byte[] menuImage;
         private int menuId;
+
         public FrmMenu()
         {
             InitializeComponent();
         }
+
         private Image convertByteArrayToImage(byte[] byteArrayIn)
         {
             if (byteArrayIn == null || byteArrayIn.Length == 0)
@@ -370,6 +373,7 @@ namespace CoffeeCafeProject
 
         private void btDelete_Click(object sender, EventArgs e)
         {
+            //ลบข้อมูล ที่ถูกเลือก โดยมีการถามก่อนลบ
             if (string.IsNullOrEmpty(tbMenuId.Text))
             {
                 MessageBox.Show("กรุณาเลือกรายการเมนูก่อนลบ", "แจ้งเตือน", MessageBoxButtons.OK, MessageBoxIcon.Warning);
