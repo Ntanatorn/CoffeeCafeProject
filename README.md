@@ -1,6 +1,3 @@
-
-# CoffeeCafeProject
-
 # CoffeeCafeProject
 
 # ภาพ Ui Screen (หลัก)
