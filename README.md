@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # CoffeeCafeProject
 =======
+=======
+>>>>>>> e0c31154c5c20ea170479ecd5f30dd3f2ac9bc78
 # CoffeeCafeProject
 
 # ภาพ Ui Screen (หลัก)
@@ -13,4 +16,8 @@
 
 <img src="https://github.com/user-attachments/assets/b92d7f17-8700-4a77-8001-4fa16c49afc7" width="250">
 
+<<<<<<< HEAD
 >>>>>>> bf42152238a0e4c3bf7d2e4dca4dc6fbb663b503
+=======
+
+>>>>>>> e0c31154c5c20ea170479ecd5f30dd3f2ac9bc78
