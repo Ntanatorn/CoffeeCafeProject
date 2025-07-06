@@ -9,18 +9,16 @@ using System.Windows.Forms;
 namespace CoffeeCafeProject
 {
     public partial class FrmMenu : Form
-<<<<<<< HEAD
+
     {
         byte[] menuImage;
         private int menuId;
-=======
-    {        
->>>>>>> bf42152238a0e4c3bf7d2e4dca4dc6fbb663b503
+        
         public FrmMenu()
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
+
         private Image convertByteArrayToImage(byte[] byteArrayIn)
         {
             if (byteArrayIn == null || byteArrayIn.Length == 0)
@@ -450,8 +448,6 @@ namespace CoffeeCafeProject
             //ปิด FrmMenu
             this.Close();
         }
-=======
 
->>>>>>> bf42152238a0e4c3bf7d2e4dca4dc6fbb663b503
     }
 }
