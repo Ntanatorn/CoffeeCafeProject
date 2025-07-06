@@ -429,6 +429,7 @@ namespace CoffeeCafeProject
 
         private void btCancel_Click(object sender, EventArgs e)
         {
+            //ยกเลิกการทำงานต่าง และ เคลียทุกอย่างออกจาก toolbox
             pbMenuImage.Image = null;
             tbMenuId.Clear();
             tbMenuName.Clear();
@@ -441,6 +442,7 @@ namespace CoffeeCafeProject
 
         private void btClose_Click(object sender, EventArgs e)
         {
+            //ปิด FrmMenu
             this.Close();
         }
     }
