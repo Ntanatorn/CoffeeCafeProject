@@ -13,11 +13,6 @@ namespace CoffeeCafeProject
     {
         byte[] menuImage;
         private int menuId;
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> e0c31154c5c20ea170479ecd5f30dd3f2ac9bc78
         public FrmMenu()
         {
             InitializeComponent();
@@ -453,9 +448,6 @@ namespace CoffeeCafeProject
             //ปิด FrmMenu
             this.Close();
         }
-<<<<<<< HEAD
-=======
 
->>>>>>> e0c31154c5c20ea170479ecd5f30dd3f2ac9bc78
     }
 }
