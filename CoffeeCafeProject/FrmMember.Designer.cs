@@ -227,6 +227,7 @@
             this.Name = "FrmMember";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Member - SAU Coffee Cafe V.1.0";
+            this.Load += new System.EventHandler(this.FrmMember_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);

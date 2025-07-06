@@ -114,7 +114,7 @@ namespace CoffeeCafeProject
         private void FrmMenu_Load(object sender, EventArgs e)
         {
             getAllMenuToListView();
-
+            menuImage = null;
             pbMenuImage.Image = null;
             tbMenuId.Clear();
             tbMenuName.Clear();
