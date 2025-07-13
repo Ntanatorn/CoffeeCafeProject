@@ -41,10 +41,10 @@ namespace CoffeeCafeProject
         private void getAllMenuToListView()
         {
             //Connect String เพื่อติดต่อไปยังฐานข้อมูล
-            string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
+           // string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
 
             //สร้าง Connection ไปยังฐานข้อมูล
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(ShereResource.connectionString))
             {
                 try
                 {
@@ -71,8 +71,8 @@ namespace CoffeeCafeProject
 
                         lvShowAllMenu.Columns.Add("รูปเมนู", 100, HorizontalAlignment.Left);
                         lvShowAllMenu.Columns.Add("รหัสเมนู", 80, HorizontalAlignment.Left);
-                        lvShowAllMenu.Columns.Add("ชื่อเมนู", 140, HorizontalAlignment.Left);
-                        lvShowAllMenu.Columns.Add("ราคาเมนู", 95, HorizontalAlignment.Right);
+                        lvShowAllMenu.Columns.Add("ชื่อเมนู", 135, HorizontalAlignment.Left);
+                        lvShowAllMenu.Columns.Add("ราคาเมนู", 75, HorizontalAlignment.Right);
 
                         foreach (DataRow dataRow in dataTable.Rows)
                         {
@@ -177,9 +177,9 @@ namespace CoffeeCafeProject
             else
             {
                 // Connect String สำหรับเชื่อมต่อฐานข้อมูล
-                string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
+                //string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
 
-                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                using (SqlConnection sqlConnection = new SqlConnection(ShereResource.connectionString))
                 {
                     try
                     {
@@ -270,9 +270,9 @@ namespace CoffeeCafeProject
         }
         private void LoadMenuDataToTextBox(int menuId)
         {
-            string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
+            //string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
 
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(ShereResource.connectionString))
             {
                 try
                 {
@@ -327,9 +327,9 @@ namespace CoffeeCafeProject
             }
             else
             {
-                string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
+                //string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
 
-                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                using (SqlConnection sqlConnection = new SqlConnection(ShereResource.connectionString))
                 {
                     try
                     {
@@ -389,9 +389,9 @@ namespace CoffeeCafeProject
             var confirmResult = MessageBox.Show("คุณแน่ใจที่จะลบเมนูนี้หรือไม่?", "ยืนยันการลบ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (confirmResult == DialogResult.Yes)
             {
-                string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
+                //string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
 
-                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                using (SqlConnection sqlConnection = new SqlConnection(ShereResource.connectionString))
                 {
                     try
                     {
@@ -445,7 +445,7 @@ namespace CoffeeCafeProject
 
         private void btClose_Click(object sender, EventArgs e)
         {
-            //ปิด FrmMenu
+ 
             this.Close();
         }
 

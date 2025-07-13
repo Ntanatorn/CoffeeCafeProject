@@ -34,9 +34,9 @@ namespace CoffeeCafeProject
 
         private void getAllMemberToListView()
         {
-            string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
+            //string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
 
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(ShereResource.connectionString))
             {
                 try
                 {
@@ -97,9 +97,9 @@ namespace CoffeeCafeProject
                 return;
             }
 
-            string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
+            //string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
 
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(ShereResource.connectionString))
             {
                 try
                 {
@@ -107,12 +107,13 @@ namespace CoffeeCafeProject
 
                     SqlTransaction sqlTransaction = sqlConnection.BeginTransaction();
 
-                    string strSql = "INSERT INTO member_tb (memberPhone, memberName) VALUES (@memberPhone, @memberName)";
+                    string strSql = "INSERT INTO member_tb (memberPhone, memberName, memberScore) VALUES (@memberPhone, @memberName, @memberScore)";
 
                     using (SqlCommand sqlCommand = new SqlCommand(strSql, sqlConnection, sqlTransaction))
                     {
                         sqlCommand.Parameters.Add("@memberPhone", SqlDbType.NVarChar, 50).Value = tbMemberPhone.Text;
                         sqlCommand.Parameters.Add("@memberName", SqlDbType.NVarChar, 100).Value = tbMemberName.Text;
+                        sqlCommand.Parameters.Add("@memberScore", SqlDbType.Int).Value = 0;
 
                         sqlCommand.ExecuteNonQuery();
                         sqlTransaction.Commit();
@@ -150,9 +151,9 @@ namespace CoffeeCafeProject
                 return;
             }
 
-            string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
+            //string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
 
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(ShereResource.connectionString))
             {
                 try
                 {
@@ -210,9 +211,9 @@ namespace CoffeeCafeProject
             var confirmResult = MessageBox.Show("คุณแน่ใจที่จะลบสมาชิกนี้หรือไม่?", "ยืนยันการลบ", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (confirmResult == DialogResult.Yes)
             {
-                string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
+                //string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
 
-                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+                using (SqlConnection sqlConnection = new SqlConnection(ShereResource.connectionString))
                 {
                     try
                     {
@@ -268,9 +269,9 @@ namespace CoffeeCafeProject
 
         private void LoadMemberDataToTextBox(int memberId)
         {
-            string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
+            //string connectionString = @"Server=DESKTOP-9U4FO0V\SQLEXPRESS;Database=coffee_cafe_db;Trusted_Connection=True;";
 
-            using (SqlConnection sqlConnection = new SqlConnection(connectionString))
+            using (SqlConnection sqlConnection = new SqlConnection(ShereResource.connectionString))
             {
                 try
                 {

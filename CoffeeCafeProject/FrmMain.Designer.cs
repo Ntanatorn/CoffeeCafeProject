@@ -94,6 +94,7 @@
             this.btMenu1.TabIndex = 0;
             this.btMenu1.Text = "Menu";
             this.btMenu1.UseVisualStyleBackColor = true;
+            this.btMenu1.Click += new System.EventHandler(this.btMenu1_Click);
             // 
             // btMenu6
             // 
@@ -103,6 +104,7 @@
             this.btMenu6.TabIndex = 2;
             this.btMenu6.Text = "Menu";
             this.btMenu6.UseVisualStyleBackColor = true;
+            this.btMenu6.Click += new System.EventHandler(this.btMenu6_Click);
             // 
             // btMenu7
             // 
@@ -112,6 +114,7 @@
             this.btMenu7.TabIndex = 6;
             this.btMenu7.Text = "Menu";
             this.btMenu7.UseVisualStyleBackColor = true;
+            this.btMenu7.Click += new System.EventHandler(this.btMenu7_Click);
             // 
             // btMenu2
             // 
@@ -121,6 +124,7 @@
             this.btMenu2.TabIndex = 4;
             this.btMenu2.Text = "Menu";
             this.btMenu2.UseVisualStyleBackColor = true;
+            this.btMenu2.Click += new System.EventHandler(this.btMenu2_Click);
             // 
             // btMenu9
             // 
@@ -130,6 +134,7 @@
             this.btMenu9.TabIndex = 14;
             this.btMenu9.Text = "Menu";
             this.btMenu9.UseVisualStyleBackColor = true;
+            this.btMenu9.Click += new System.EventHandler(this.btMenu9_Click);
             // 
             // btMenu4
             // 
@@ -139,6 +144,7 @@
             this.btMenu4.TabIndex = 12;
             this.btMenu4.Text = "Menu";
             this.btMenu4.UseVisualStyleBackColor = true;
+            this.btMenu4.Click += new System.EventHandler(this.btMenu4_Click);
             // 
             // btMenu8
             // 
@@ -148,6 +154,7 @@
             this.btMenu8.TabIndex = 10;
             this.btMenu8.Text = "Menu";
             this.btMenu8.UseVisualStyleBackColor = true;
+            this.btMenu8.Click += new System.EventHandler(this.btMenu8_Click);
             // 
             // btMenu3
             // 
@@ -157,6 +164,7 @@
             this.btMenu3.TabIndex = 8;
             this.btMenu3.Text = "Menu";
             this.btMenu3.UseVisualStyleBackColor = true;
+            this.btMenu3.Click += new System.EventHandler(this.btMenu3_Click);
             // 
             // btMenu10
             // 
@@ -166,6 +174,7 @@
             this.btMenu10.TabIndex = 18;
             this.btMenu10.Text = "Menu";
             this.btMenu10.UseVisualStyleBackColor = true;
+            this.btMenu10.Click += new System.EventHandler(this.btMenu10_Click);
             // 
             // btMenu5
             // 
@@ -176,6 +185,7 @@
             this.btMenu5.TabIndex = 16;
             this.btMenu5.Text = "Menu";
             this.btMenu5.UseVisualStyleBackColor = true;
+            this.btMenu5.Click += new System.EventHandler(this.btMenu5_Click);
             // 
             // groupBox1
             // 
@@ -348,6 +358,7 @@
             this.btCancel.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btCancel.UseVisualStyleBackColor = true;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
             // btSave
             // 
@@ -360,6 +371,7 @@
             this.btSave.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
             // tbMemberName
             // 
@@ -455,6 +467,7 @@
             this.lvOrderMenu.Size = new System.Drawing.Size(247, 183);
             this.lvOrderMenu.TabIndex = 3;
             this.lvOrderMenu.UseCompatibleStateImageBehavior = false;
+            this.lvOrderMenu.ItemActivate += new System.EventHandler(this.lvOrderMenu_ItemActivate);
             // 
             // tbMemberPhone
             // 
@@ -462,6 +475,7 @@
             this.tbMemberPhone.Name = "tbMemberPhone";
             this.tbMemberPhone.Size = new System.Drawing.Size(101, 20);
             this.tbMemberPhone.TabIndex = 2;
+            this.tbMemberPhone.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbMemberPhone_KeyUp);
             // 
             // rdMemberYes
             // 
@@ -472,6 +486,7 @@
             this.rdMemberYes.TabIndex = 1;
             this.rdMemberYes.Text = "เป็นสมาชิก ระบุเบอร์โทร";
             this.rdMemberYes.UseVisualStyleBackColor = true;
+            this.rdMemberYes.CheckedChanged += new System.EventHandler(this.rdMemberYes_CheckedChanged);
             // 
             // rdMenberNo
             // 
@@ -484,6 +499,7 @@
             this.rdMenberNo.TabStop = true;
             this.rdMenberNo.Text = "ไม่เป็นสมาชิก";
             this.rdMenberNo.UseVisualStyleBackColor = true;
+            this.rdMenberNo.CheckedChanged += new System.EventHandler(this.rdMenberNo_CheckedChanged);
             // 
             // label1
             // 
@@ -561,6 +577,7 @@
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main - SAU Coffee Cafe V.1.0";
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu5)).EndInit();
